@@ -24,6 +24,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 5px;
+    box-shadow: 10px 10px 10px 1px rgba(0,0,0,0.15);
 }
 
 /* ----------------- Nav Bar ------------------- */
@@ -44,6 +46,8 @@
     border-radius: 50%;
     font-size: 20px;
     background-color: #caf0f8;
+    cursor: pointer;
+    box-shadow: 10px 10px 30px 1px rgba(0,0,0,0.15);
 }
 
 /* -------------------- Thumbnail ------------------ */
@@ -55,10 +59,85 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden
+    overflow: hidden;
+    box-shadow: 10px 10px 30px 1px rgba(0,0,0,0.15);
 }
 .thumbnail-image {
     width: 100%;
     object-fit: cover;
     border-radius: 50%;
+}
+/*   song Info ---- */
+.song-info {
+    text-align: center;
+    font-weight: bold;
+}
+#song-title {
+    color: #0077b6;
+    font-size: 34px;
+}
+#song-singer {
+    color: #1d3557;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+
+/* -------------------- Controls ------------------ */
+.controls {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.music-progress-indicator {
+    width: 90%;
+    height: 6px;
+    -webkit-appearance: none;
+    background-color: #03045e;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#music-progress-indicator::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 5px solid #fff;
+    background-color: #03045e;
+    border-radius: 50%;
+}
+/* ----control buttons */
+.control-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+.previous-song, .following-song {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #03045e;
+    box-shadow: 10px 10px 30px 1px rgba(0,0,0,0.15);
+}
+.play-pause-song {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background-color: #03045e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    box-shadow: 10px 10px 30px 1px rgba(0,0,0,0.15);
 }
