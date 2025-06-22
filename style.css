@@ -5,3 +5,19 @@
     font-family: "Roboto Mono", monospace;
     box-sizing: border-box;
 }
+.container {
+    background-color: #1b263b;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Here starts the music player specs */
+.music-player {
+    width: 400px;
+    height: 100vh;
+    min-width: 400px;
+    max-height: 600px;
+    background-color: #90e0ef;
+}
