@@ -21,9 +21,15 @@
     min-width: 400px;
     max-height: 600px;
     background-color: #90e0ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* ----------------- Nav Bar ------------------- */
+.navbar {
+    width: 100%;
+}
 .navigation-buttons {
     display: flex;
     justify-content: space-between;
@@ -38,4 +44,21 @@
     border-radius: 50%;
     font-size: 20px;
     background-color: #caf0f8;
+}
+
+/* -------------------- Thumbnail ------------------ */
+.thumnail {
+    width: 250px;
+    height: 250px;
+    border: 5px solid #0077b6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.thumbnail-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
