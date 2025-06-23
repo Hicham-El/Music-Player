@@ -26,7 +26,7 @@
 
             <!-- --------------- Music thumb -->
             <div class="thumnail">
-                <img class="thumbnail-image" src="media/AbdelhadiBelkhayat.jpg" alt="Music Thumbnail">
+                <img id="thumbnail-image" class="thumbnail-image" src="media/AbdelhadiBelkhayat.jpg" alt="Music Thumbnail">
             </div>
             <div class="song-info">
                 <div id="song-title" dir="rtl">يا داك الإنسان</div>
@@ -35,7 +35,7 @@
             <!-- -------------------------- -->
 
             <!-- ---------------- Controls - -->
-            <audio controls>
+            <audio id="song">
                 <source src="media/music.mp3" type="audio/mpeg"/>
             </audio>
             <div class="controls">
@@ -43,12 +43,14 @@
 
                 <div class="control-buttons">
                     <div class="previous-song"><i class="fa-solid fa-backward"></i></div>
-                    <div class="play-pause-song"><i class="fa-solid fa-play"></i></div>
+                    <div class="play-pause-song" onclick="playPause()"><i class="fa-solid fa-play" id="play-pause-icon"></i></div>
                     <div class="following-song"><i class="fa-solid fa-forward"></i></div>
                 </div>
             </div>
 
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
