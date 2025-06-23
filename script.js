@@ -1,10 +1,10 @@
 progressIndicator = document.getElementById("music-progress-indicator");
 playPauseIcon = document.getElementById("play-pause-icon");
 song = document.getElementById("song");
-thumbnailImage = document.getElementById("thumbnail-image");
 
 song.onloadedmetadata = function(){
     progressIndicator.max = song.duration;
+    song.currentTime = 0;
     progressIndicator.value = song.currentTime;
 }
 

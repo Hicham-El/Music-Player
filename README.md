@@ -17,7 +17,7 @@ Music Player/
 ├── style.css          # Stylesheet for the player
 ├── script.js          # JavaScript for player logic
 ├── media/
-│   ├── AbdelhadiBelkhayat.jpg  # Album thumbnail
+│   ├── thumbnail.jpg  # Album thumbnail
 │   └── music.mp3               # Audio file
 └── display.png        # (Optional) Screenshot or design image
 ```
@@ -28,7 +28,7 @@ Music Player/
 3. Open `index.html` in your web browser.
 
 ## Customization
-- Replace `media/AbdelhadiBelkhayat.jpg` with your own album art.
+- Replace `media/thumbnail.jpg` with your own album art.
 - Replace `media/music.mp3` with your own song.
 - Edit `style.css` for color and style changes.
 
